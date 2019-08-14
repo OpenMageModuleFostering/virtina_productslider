@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!--
+
+ * Virtina
+ * @package    Virtina_ProductSlider
+ * @copyright  Copyright (c) 2015-2016 Virtina. (http://www.virtina.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+
+-->
+<config>
+    <modules>
+        <Virtina_ProductSlider>
+            <version>0.0.1</version>
+        </Virtina_ProductSlider>
+    </modules> 
+        <frontend>
+        <routers>
+            <ProductSlider>
+                <use>standard</use>
+                <args>
+                    <module>Virtina_ProductSlider</module>
+                    <frontName>slider</frontName>
+                </args>
+            </ProductSlider>
+        </routers>
+        <layout>
+            <updates>
+                <ProductSlider>
+                    <file>product-slider/productslider.xml</file>
+                </ProductSlider>
+            </updates>
+        </layout>
+    </frontend> 
+    <admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Virtina_ProductSlider after="Mage_Adminhtml">Virtina_ProductSlider_Adminhtml</Virtina_ProductSlider>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+    <global>
+	  <models>
+		<productslider>
+			<class>Virtina_ProductSlider_Model</class>	
+		</productslider>
+      </models>
+	  <blocks>
+		<productslider>
+		  <class>Virtina_ProductSlider_Block</class>
+		</productslider>
+	  </blocks>
+	  <helpers>
+		<productslider>
+		  <class>Virtina_ProductSlider_Helper</class>
+		</productslider>
+	  </helpers> 
+    </global> 
+     <default>
+       <producslider>
+			<general>
+				<enable_slider>1</enable_slider>
+			</general>
+            <display>
+				<slidertitle>Featured Products</slidertitle>
+				<showtitle>1</showtitle>
+				<showprice>1</showprice>
+				<showimage>1</showimage>
+				<showreview>1</showreview>
+				<showaddtocart>1</showaddtocart>
+				<shownavigation>1</shownavigation>
+				<showntierprice>0</showntierprice>
+				<product_type>0</product_type>	
+				<auto>1</auto>
+				<loop>1</loop>  
+            </display>			
+            <slider>
+				<number>10</number>				
+                <slidestoscroll>1</slidestoscroll>
+                <websiteview>4</websiteview>
+                <tabview>3</tabview>                
+                <mobileview>1</mobileview>
+                <speed>1000</speed> 
+            </slider>  
+        </producslider>
+    </default>          
+</config>

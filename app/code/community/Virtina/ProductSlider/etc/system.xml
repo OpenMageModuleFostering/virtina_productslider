@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Virtina
+ * @package    Virtina_ProductSlider
+ * @copyright  Copyright (c) 2015-2016 Virtina. (http://www.virtina.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+-->
+<config>
+    <tabs>
+        <virtina_extensions translate="label" module="productslider">
+            <label>Virtina Extensions</label>
+            <sort_order>100</sort_order>
+        </virtina_extensions>
+    </tabs>  
+    <sections>
+        <producslider>
+            <label>Product Slider Settings</label>
+            <tab>virtina_extensions</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+           <groups>
+			   <general translate="label" module="productslider">
+				   <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+				    <fields>
+                        <enable_slider translate="label">
+                            <label>Enable Slider </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable_slider>
+                        <enablejQuery translate="label">
+                            <label>Enable jQuery </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enablejQuery>
+					</fields>
+				</general>
+                <display translate="label" module="productslider">
+                    <label>Display</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website> 
+                    <show_in_store>1</show_in_store> 
+                    <fields>
+						<slidertitle translate="label">
+                            <label>Set Slider Title</label> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slidertitle>
+                        <showtitle translate="label">
+                            <label>Show Product Title </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showtitle>
+                        <product_type translate="label">
+							<label>Select Product Type</label>
+							<frontend_type>multiselect</frontend_type>
+							<source_model>productslider/system_config_source_types</source_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+						</product_type>
+                        <showprice translate="label">
+                            <label>Show Product Price </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showprice>
+                        <showimage translate="label">
+                            <label>Show Product Image </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showimage>
+                        <showreview translate="label">
+                            <label>Show Product Review </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showreview>
+                        <showaddtocart translate="label">
+                            <label>Show Add to Cart Button </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showaddtocart>
+                        <shownavigation translate="label">
+                            <label>Show Navigation Control </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shownavigation>
+                        <showntierprice translate="label">
+                            <label>Show Tier Price </label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showntierprice>  
+                        <auto translate="label">
+                            <label>Enable Autoplay </label>							
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </auto>
+                        <loop translate="label">
+                            <label>Enable Looping </label>							
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </loop>   
+					</fields>
+				</display>              
+                <slider translate="label" module="productslider">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+                    <fields>
+                        <number translate="label">
+                            <label>Set Maximum Number of Products</label> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </number>
+                        <categoryid translate="label">
+                            <label>Set Category ID</label> 
+                            <comment>Example 2,5</comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <validate>required-entry</validate>
+                            <show_in_store>1</show_in_store>
+                        </categoryid>                        
+                        <slidestoscroll translate="label">
+                            <label>Set Number of Slides to Scroll</label> 
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slidestoscroll>                         
+                        <websiteview translate="label">
+                            <label>Set Number of Products to Display in Website View</label>                          
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </websiteview>
+                        <tabview translate="label">
+                            <label>Set Number of Products to Display in Tablet View</label> 
+                            <comment>Set 3 for ideal view</comment>                         
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tabview>
+                        <mobileview translate="label">
+                            <label>Set Number of Products to Display in Mobile View</label> 
+                            <comment>Set 1 for ideal view</comment>                         
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mobileview>                                           
+                        <speed translate="label">
+                            <label>Slider Speed</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </speed>                        
+                    </fields>
+                </slider>              
+            </groups>
+        </producslider>
+    </sections>
+</config>

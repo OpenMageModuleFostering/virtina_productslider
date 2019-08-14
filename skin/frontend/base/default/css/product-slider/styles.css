@@ -1,0 +1,97 @@
+/**
+ * Virtina
+ * @package    Virtina_ProductSlider
+ * @copyright  Copyright (c) 2015-2016 Virtina. (http://www.virtina.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+.slick-track .product-info .product-name{
+	text-align : center;
+	font-size: 13px;
+    font-weight: bolder;
+}
+.slick-track .product-info .price-box {
+	text-align : center;
+}
+.productslider .widget-products .product-image { 
+	height:auto !important; 
+}
+.widget-new-products .widget-products .slick-slider .slick-arrow {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    top: 70px;
+}
+.widget-new-products .widget-products .slick-slider .slick-list {
+    float: left;
+    overflow: hidden;
+    width: 91%;
+}
+.productslider .widget-products ul{
+	list-style : outside none none !important;
+}
+
+@media only screen and (max-width: 985px) {
+.widget-new-products .widget-products .slick-slider .slick-list {
+    width: 92%;
+}
+.widget-new-products .widget-products .slick-slider .slick-arrow {
+    top: 55px;
+}
+}
+@media only screen and (max-width: 719px) {
+.widget-new-products .widget-products .slick-slider .slick-list {
+    width: 90%;
+}
+}
+@media only screen and (max-width: 719px) {
+.widget-new-products .widget-products .slick-slider .slick-list {
+    width: 86%;
+}
+}
+@media only screen and (max-width: 479px) {
+.productslider .widget-products .products-custom-grid .product-info{
+	padding-bottom: 5px;
+}
+}
+
+.productslider .product-secondary{
+	text-align:center !important; 
+}
+.slick-slide img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.item.first.slick-slide {
+	border: 1px solid #ededed; 
+}
+.inwrap {
+    min-height: 115px;
+}
+.products-custom-grid .product-info{
+	padding-bottom :0px !important;
+}
+.inwrap .ratings .rating-box{
+	margin:0 auto !important;
+	float:none; 
+}
+
+.col1-layout .products-custom-grid {
+    margin: 0 auto;
+    width: 100%;
+}
+.custom-price-box{
+	text-align:center;
+	font-weight: bolder;
+	color: #c76200;
+}
+.widget.widget-new-products.productsliderempty {
+    text-align: center;
+}
+.std .productslider ul li { margin: 0 1em; }
+.inwrap .ratings {
+    display: block !important;
+}
+.productslider ul li {
+    margin: 0 1em;
+}

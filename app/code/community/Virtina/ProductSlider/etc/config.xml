@@ -10,7 +10,7 @@
 <config>
     <modules>
         <Virtina_ProductSlider>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </Virtina_ProductSlider>
     </modules> 
         <frontend>
@@ -58,6 +58,26 @@
 		  <class>Virtina_ProductSlider_Helper</class>
 		</productslider>
 	  </helpers> 
+	  <resources>
+            <productslider_setup>
+                <setup>
+                    <module>Virtina_ProductSlider</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </productslider_setup>
+            <productslider_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </productslider_write>
+            <productslider_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </productslider_read>
+        </resources>
     </global> 
      <default>
        <producslider>

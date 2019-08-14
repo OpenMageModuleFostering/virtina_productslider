@@ -189,17 +189,20 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </slidestoscroll>                         
-                        <websiteview translate="label">
-                            <label>Set Number of Products to Display in Website View</label>                          
+                       <websiteview translate="label">
+                            <label>Set Number of Products to Display on Slider in Desktop View</label>                          
                             <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-digits-range digits-range-1-6</validate>
+                            <comment>Set count less than 6 for ideal view </comment>
                             <sort_order>4</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </websiteview>
                         <tabview translate="label">
-                            <label>Set Number of Products to Display in Tablet View</label> 
+                            <label>Set Number of Products to Display on Slider in Tablet View</label> 
                             <comment>Set 3 for ideal view</comment>                         
+                            <validate>required-entry validate-digits-range digits-range-1-3</validate>
                             <frontend_type>text</frontend_type>
                             <sort_order>5</sort_order>
                             <show_in_default>1</show_in_default>
@@ -207,8 +210,9 @@
                             <show_in_store>1</show_in_store>
                         </tabview>
                         <mobileview translate="label">
-                            <label>Set Number of Products to Display in Mobile View</label> 
+                            <label>Set Number of Products to Display on Slider in Mobile View</label> 
                             <comment>Set 1 for ideal view</comment>                         
+                            <validate>required-entry validate-digits-range digits-range-1-2</validate>
                             <frontend_type>text</frontend_type>
                             <sort_order>6</sort_order>
                             <show_in_default>1</show_in_default>

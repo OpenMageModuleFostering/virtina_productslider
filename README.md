@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 PRODUCT SLIDER extension is used to display all types of products in a particular category in a slider.

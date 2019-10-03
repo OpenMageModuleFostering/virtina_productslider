@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Virtina_Productslider",
+    "name": "OpenMageModuleFostering\/Virtina_Productslider",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
     "description": "PRODUCT SLIDER extension is used to display all types of products in a particular category in a slider.",
     "authors": [
-    {
-        "name": "Virtina",
-        "email": "gigijk@virtina.com"
-    }
-],
+        {
+            "name": "Virtina",
+            "email": "gigijk@virtina.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
